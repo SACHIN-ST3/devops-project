@@ -2,9 +2,8 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route('/')
 def home():
-   return "Version 2 deployed by Jenkins CI/CD"
+    return "Version 2 deployed automatically by Jenkins"
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+app.run(host='0.0.0.0', port=5000)
